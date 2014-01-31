@@ -1,15 +1,5 @@
 @import "imports/__normalize";
-
-@font-face {
-  font-family: 'Cubano';
-  src: url('webfont/cubano-regular-webfont.eot');
-  src: url('webfont/cubano-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('webfont/cubano-regular-webfont.woff') format('woff'),
-  url('webfont/cubano-regular-webfont.ttf') format('truetype'),
-  url('webfont/cubano-regular-webfont.svg#CubanoRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "imports/_mixins";
 
 .clearfix {
   @include clearfix();
@@ -56,8 +46,7 @@ a, a:visited {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: 'Cubano';
+  font-weight: 700;
 }
 
 img {

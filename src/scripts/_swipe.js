@@ -249,7 +249,7 @@ function Swipe(container, options) {
         case 'oTransitionEnd':
         case 'otransitionend':
         case 'transitionend': offloadFn(this.transitionEnd(event)); break;
-        case 'resize': offloadFn(setup.call()); break;
+        case 'resize': offloadFn(setup); break;
       }
 
       if (options.stopPropagation) event.stopPropagation();
@@ -496,6 +496,12 @@ function Swipe(container, options) {
       next();
 
     },
+    stop: function() {
+
+      // cancel slideshow
+      stop();
+
+    },
     getPos: function() {
 
       // return current index position
@@ -513,16 +519,16 @@ function Swipe(container, options) {
       stop();
 
       // reset element
-      element.style.width = 'auto';
-      element.style.left = 0;
+      element.style.width = '';
+      element.style.left = '';
 
       // reset slides
       var pos = slides.length;
       while(pos--) {
 
         var slide = slides[pos];
-        slide.style.width = '100%';
-        slide.style.left = 0;
+        slide.style.width = '';
+        slide.style.left = '';
 
         if (browser.transitions) translate(pos, 0, 0);
 

@@ -272,6 +272,12 @@ header {
       header ul li:first-child a {
         margin-left: 1em; }
 
+table {
+  table-layout: fixed;
+  width: 100%; }
+  table th {
+    text-align: left; }
+
 @media only screen and (max-width: 1139px) {
   header h1 {
     border-right: none; }

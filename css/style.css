@@ -280,6 +280,15 @@ table {
     border: 1px solid #CCC;
     padding: 0.5em; }
 
+hr {
+  height: 1px;
+  width: 100%;
+  margin: 0.5em 0;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4); }
+
 @media only screen and (max-width: 1139px) {
   header h1 {
     border-right: none; }

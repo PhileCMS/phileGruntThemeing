@@ -289,6 +289,9 @@ hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.4); }
 
+p a {
+  text-decoration: underline; }
+
 @media only screen and (max-width: 1139px) {
   header h1 {
     border-right: none; }

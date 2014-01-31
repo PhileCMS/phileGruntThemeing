@@ -275,8 +275,10 @@ header {
 table {
   table-layout: fixed;
   width: 100%; }
-  table th {
-    text-align: left; }
+  table th, table td {
+    text-align: left;
+    border: 1px solid #CCC;
+    padding: 0.5em; }
 
 @media only screen and (max-width: 1139px) {
   header h1 {

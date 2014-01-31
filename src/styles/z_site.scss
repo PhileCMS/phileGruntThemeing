@@ -99,8 +99,10 @@ header {
 table {
   table-layout: fixed;
   width: 100%;
-  th {
+  th, td {
     text-align: left;
+    border: 1px solid #CCC;
+    padding: 0.5em;
   }
 }
 

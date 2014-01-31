@@ -1,14 +1,11 @@
 <header>
-  <h1>{{ site_title|e|upper }}</h1>
+  <h1><a href="{{ base_url }}">{{ site_title|e|upper }}</a></h1>
   <nav>
     <ul>
-      <li><a href="index" {% if current_page.url == '' %}class="active"{% endif %}>HOME</a></li>
       {% for page in pages %}
         {# dont show my home page because of alpha sorting #}
-        {% if page.title != 'Home' %}
         {# easy to use page title for checking if active #}
         <li><a href="{{ page.url }}" {% if current_page.title == page.title %}class="active"{% endif %}>{{ page.title|e|upper }}</a></li>
-        {% endif %}
       {% endfor %}
     </ul>
   </nav>
